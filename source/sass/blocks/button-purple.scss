@@ -1,0 +1,23 @@
+.button-purple {
+  text-align: center;
+  color: #ffffff;
+  background-color: #7859cf;
+  border: none;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #9070ec;
+  }
+
+  &:focus {
+    background-color: #9070ec;
+  }
+
+  &:active {
+    background-color: #593cac;
+  }
+
+  &:disabled {
+    background-color: #bdbdbd;
+  }
+}

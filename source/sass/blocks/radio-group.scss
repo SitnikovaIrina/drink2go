@@ -1,0 +1,115 @@
+.radio-group {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3px;
+  border: none;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 5px;
+  }
+}
+
+.radio-group__title {
+  padding: 0;
+  margin-bottom: 22px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+    padding-left: 21px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 9px;
+  }
+}
+
+.radio-group__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  @media (min-width: 768px) {
+    padding-left: 21px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 7px;
+  }
+}
+
+.radio-group__item {
+  margin-bottom: 21px;
+}
+
+.radio-group__control {
+  position: relative;
+  display: block;
+  padding-left: 34px;
+}
+
+.radio-group__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 2px solid #bdbdbd;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: none;
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("/img/svg/sprites/radio-hover-pin.svg");
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &:disabled {
+    outline: 2px solid #e2e2e2;
+  }
+
+  &--disabled {
+    border: 2px solid #e2e2e2;
+  }
+}
+
+.radio-group__input + .radio-group__mark {
+  border-radius: 50px;
+}
+
+.radio-group__input:checked + .radio-group__mark {
+  &::before {
+    position: absolute;
+    outline: none;
+    border: none;
+    left: -2px;
+    top: -2px;
+    width: 24px;
+    height: 24px;
+    background-image: url("/img/svg/sprites/radio-active-pin.svg");
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
+.radio-group__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  &--disabled {
+    color: #bdbdbd;
+  }
+}
+

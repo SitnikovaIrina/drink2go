@@ -1,0 +1,170 @@
+.range {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 23px;
+  border: none;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 28px;
+  }
+}
+
+.range__title {
+  padding: 0;
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 10px;
+    margin-bottom: 28px;
+  }
+}
+
+.range__scale {
+  position: relative;
+  margin-bottom: 35px;
+  width: 280px;
+  height: 2px;
+  background-color: #e2e2e2;
+
+  @media (min-width: 768px) {
+    width: 220px;
+    padding-left: 7px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 318px;
+  }
+}
+
+.range__bar {
+  left: 0;
+  width: 240px;
+  position: relative;
+  height: 4px;
+  background-color: #9070ec;
+
+  @media (min-width: 768px) {
+    width: 181px;
+    padding-left: 7px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 278px;
+  }
+}
+
+.range__toggle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  border: 2px solid #9070ec;
+  outline: none;
+
+  &--min {
+    top: -8px;
+
+    @media (min-width: 768px) {
+      left: 0;
+    }
+
+    @media (min-width: 1440px) {
+      left: 0;
+    }
+  }
+
+  &--max {
+    top: -8px;
+    right: -20px;
+
+    @media (min-width: 768px) {
+      right: -12px;
+    }
+
+    @media (min-width: 1440px) {
+      right: -15px;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #7859cf;
+  }
+}
+
+.range__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    padding-left: 7px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 7px;
+    min-width: 320px;
+  }
+}
+
+.range__price-min,
+.range__price-max {
+  width: 118px;
+  min-height: 38px;
+  box-sizing: border-box;
+  padding: 7px 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #bdbdbd;
+  border: 2px solid #9070ec;
+  border-radius: 4px;
+  appearance: textfield;
+
+  &:focus {
+    color: #333333;
+    outline: 1px solid #593cac;
+  }
+
+  &:active {
+    color: #333333;
+  }
+
+  &:disabled {
+    color: #bdbdbd;
+    outline: 2px solid #e2e2e2;
+  }
+
+  @media (min-width: 768px) {
+    width: 92px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 135px;
+  }
+}
+
+.range__price-max {
+  color: #333333;
+}
+
+.range__dash {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: #bdbdbd;
+}
